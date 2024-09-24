@@ -6,31 +6,44 @@
 </head>
 <body>
 
-    <div class="left">
+
+    <div class="left" style="margin-bottom:3rem">
         <h1>Music</h1>
 
         <p>
-            <a href=https://instagram.com/deerspine.tx>deerspine</a> -- drums, 2024 to present <br>
-
-            <a href=https://instagram.com/illkilter>illkilter</a> -- drums, 2022 to present <br>
-
-            <a href=https://instagram.com/musicdemure>demure</a> -- drums, 2021 to 2023 <br>
+            <a href=https://instagram.com/deerspine.tx>deerspine</a> <br class="smallbr"> -- drums, 2024 to present <br>
+<br>
+            <a href=https://instagram.com/illkilter>illkilter</a> <br class="smallbr"> -- drums, 2022 to present <br>
+<br>
+            <a href=https://instagram.com/musicdemure>demure</a> <br class="smallbr">  -- drums, 2021 to 2023 <br>
         </p>
 
     </div>
 
-    <div class="centerbottom" style="text-align:center">
-        <a href="index.html">home</a>
+<footer>
+    <div class= "centerbottom" style="text-align:center">
+        <a style="color:black"  href="index.html">home</a>
     </div>
-
-
+</footer>
 
 <style>
+
 .container {
-  height: 200px;
-  position: relative;
-  border: 3px solid black;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+main {
+  flex: 1;
+}
+
+
+a{
+color:blue;
+}
+
 
 .left {
   text-align:left;
@@ -39,6 +52,7 @@
 }
 
 .centerbottom {
+  font-size:100%;
   margin: 0;
   position: absolute;
   top: 95%;
@@ -51,10 +65,46 @@ body {
 }
 
 h1 {
-  font-size: 4vh;
+  font-size: 2.5rem;
 
 }
 p {
-  font-size:2vh;
+  font-size:1rem;
+}
+
+.smallbr {
+display:none;
+}
+
+@media only screen and (max-width: 650px) {
+
+p {
+  margin-left: 1rem;
+  margin-right: 3rem;
+  font-size: 6vw;
+}
+
+.smallbr {
+display:block;
+}
+
+h1 {font-size: 9vw;
+}
+
+h2 {font-size: 5vw;
+
+}
+
+.centerbottom{
+ margin: 0; 
+ font-size: 5vw;
+}
+
+}
+
+@media only screen and (max-height:475px){
+.centerbottom{
+position:relative;
+}
 }
 </style>
