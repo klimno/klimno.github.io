@@ -1372,9 +1372,9 @@ video {
   }
 }
 
-@media (min-width:800px; max-width:1299px;){
- .md2\top-margin-min{
-    margin-top:1.5rem;
+@media (min-width:800px) and (max-width:1340px){
+ .md2\:top-margin-min{
+    margin-top:2rem;
 }
 
 }
